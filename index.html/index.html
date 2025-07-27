@@ -2,36 +2,51 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Покер Рум Казахстана</title>
   <style>
     body {
       margin: 0;
+      padding: 40px 20px 20px;
       font-family: Arial, sans-serif;
-      text-align: center;
       background-color: #1b1b1b;
       color: white;
+      text-align: center;
     }
-    header img {
+
+    .photo-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 30px auto;
+      border: 3px solid #0088cc;
+      box-shadow: 0 0 15px #0088cc;
+    }
+
+    .photo-circle img {
       width: 100%;
-      max-height: 500px;
+      height: 100%;
       object-fit: cover;
+      display: block;
     }
+
     h1 {
-      margin: 30px 20px 20px;
       font-size: 2em;
+      margin-bottom: 25px;
     }
+
     .telegram-button {
-      display: inline-block;
       background-color: #0088cc;
       color: white;
-      padding: 15px 25px;
+      padding: 15px 30px;
       font-size: 18px;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
-      margin-top: 20px;
+      display: inline-block;
       transition: background-color 0.3s ease;
     }
+
     .telegram-button:hover {
       background-color: #006699;
     }
@@ -39,14 +54,13 @@
 </head>
 <body>
 
-  <header>
+  <div class="photo-circle">
     <img src="poker.jpg" alt="Покер Рум" />
-  </header>
+  </div>
 
-  <main>
-    <h1>Официальный покер рум Казахстана</h1>
-    <a class="telegram-button" href="https://t.me/+JEWs3tGaO4o1NmRl" target="_blank">Перейти в Telegram</a>
-  </main>
+  <h1>Официальный покер рум Казахстана</h1>
+
+  <a class="telegram-button" href="https://t.me/+JEWs3tGaO4o1NmRl" target="_blank">Перейти в Telegram</a>
 
 </body>
 </html>
